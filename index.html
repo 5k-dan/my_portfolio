@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Daniel Ladipo</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn" id="visit-github">Visit GitHub</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="image.jpeg" alt="Daniel Ladipo">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Daniel Ladipo</h1>
+                    <span>Software Engineer</span>
+                    <p style="margin-top: 1rem; font-size: 1.2rem; font-weight: 500; color: gray;">
+                        The Pennsylvania State University
+                    </p>
+                </div>
+                <div class="btn-group">
+                    <a href="my_resume.pdf" download class="btn">Download Resume</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/5k-dan" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-ladipo-a55960312/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Machine Learning</span>
+                    <h3>1 Year</h3>
+                    <p>Created 6 AI-driven projects using Python during the Nittany AI Bootcamp, focusing on sustainable technology applications. Leveraged machine learning models such as linear regression, neural networks, and retrieval-augmented generation (RAG) to solve real-world challenges. Additionally, participated in a hackathon where I developed a RAG chatbot using Python and Natural Language Processing (NLP) to answer questions from the Penn State ICDS user guide by retrieving relevant information and generating human-like responses.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Graphic Design</span>
+                    <h3>3 Years</h3>
+                    <p>Designed engaging posters and visual materials to promote MICS (Multicultural Innovators in Computer Science), an organization focused on creating pathways for underrepresented students in tech. These posters highlighted events, workshops, and community initiatives, boosting engagement and visibility. Additionally, created a variety of posters for my church, including evangelism materials to reach the community and designs that emphasized the key themes and messages of sermons.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Coding & Programming</span>
+                    <h3>4 Years</h3>
+                    <p>My coding experience includes building AI-driven projects using Python during the Nittany AI Bootcamp, where I applied machine learning models like linear regression and RAG. As a freelance developer, I created a user interface for a ROBLOX MMORPG with 89,000+ visits using Lua. Additionally, I programmed a VEX robot for obstacle avoidance and debris collection, combining hardware and software skills to ensure automation.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Social Media Director</span>
+                    <h3>1 Year</h3>
+                    <p>As the Social Media Director of MICS (Multicultural Innovators in Computer Science), I manage the organization’s online presence across platforms like Instagram and LinkedIn. My role involves creating engaging content to promote our mission of supporting underrepresented students in tech, including designing posts, reels, and campaigns to highlight events, member achievements, and community initiatives. Additionally, I collaborate with the team to strategize ways to boost engagement and connect with our audience, ensuring MICS remains visible and impactful in its mission to inspire diversity in computer science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="iris_pic.jpg" alt="Iris Flower Classification">
+                <h3>Iris Flower Classification</h3>
+                <p>Developed a machine learning model using Python to classify Iris flower species based on petal and sepal dimensions. Achieved 98% accuracy by implementing logistic regression and visualized feature relationships with Seaborn and Matplotlib.</p>
+                <div class="btn-group">
+                    <a href="https://github.com/5k-dan/Ai-Projects/blob/main/Flower_Classification.ipynb" target="_blank" class="btn">Live Demo</a>
+                    <a href="https://github.com/5k-dan/Ai-Projects/blob/main/Flower_Classification.ipynb" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="digitspic.avif" alt="Handwritten Digit Classification">
+                <h3>Handwritten Digit Classification</h3>
+                <p>Built a digit classification model using Python and scikit-learn to recognize handwritten digits from the MNIST dataset. Utilized machine learning algorithms and achieved high accuracy through data preprocessing and model optimization.</p>
+                <div class="btn-group">
+                    <a href="https://github.com/5k-dan/Ai-Projects/blob/main/MNIST_from_scratch.ipynb" target="_blank" class="btn">Live Demo</a>
+                    <a href="https://github.com/5k-dan/Ai-Projects/blob/main/MNIST_from_scratch.ipynb" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="MICS_LOGO.png" alt="MICS Website">
+                <h3>MICS Website</h3>
+                <p>Built the official website for Multicultural Innovators in Computer Science MICS</p>
+                <div class="btn-group">
+                    <a href="https://micspsu.netlify.app/" target="_blank" class="btn">Live Demo</a>
+                    <a href="https://github.com/5k-dan/mics_website" target="_blank" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="input">
+                <input type="text" placeholder="danielladipo@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="btn">Submit</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">@ All Rights Reserved | Daniel Ladipo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
