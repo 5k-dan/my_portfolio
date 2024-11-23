@@ -45,15 +45,19 @@
             font-size: 1rem;
             color: #333;
             margin-bottom: 1.5rem;
+            text-align: justify;
         }
         .side-by-side {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
             margin-bottom: 2rem;
+            justify-content: center;
         }
         .side-by-side img {
-            width: 48%;
+            width: 200px; /* Set fixed size for square images */
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -68,6 +72,7 @@
             }
             .side-by-side img {
                 width: 100%;
+                height: auto;
             }
         }
     </style>
