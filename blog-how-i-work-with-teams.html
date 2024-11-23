@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How I Work with Teams</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .back-home {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+            transform: scale(1.05);
+        }
+        .work-with-teams-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .work-with-teams-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
+            color: #333;
+        }
+        .work-with-teams-content {
+            margin: 2rem auto;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #555;
+            text-align: justify;
+            padding: 0 1rem;
+        }
+        .work-with-teams-content p {
+            margin-bottom: 1.5rem;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            color: rgb(0, 157, 255);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Back to Home Button -->
@@ -15,18 +94,20 @@
     <!-- Blog Post Content -->
     <div class="work-with-teams-container">
         <h1 class="work-with-teams-title">How I Work with Teams</h1>
-        <div class="work-with-teams-image">
-            <img src="teams2.jpg" alt="Team Collaboration" class="resized-teams-img">
+        <div class="image-grid">
+            <img src="teams1.jpg" alt="Team Collaboration Brainstorming">
+            <img src="teams2.jpg" alt="Hackathon Collaboration">
+            <img src="teams3.jpg" alt="Team Presentation">
         </div>
         <div class="work-with-teams-content">
             <p>
-                Collaboration has always been one of my strongest skills. Over the years, I've learned how to work effectively with teams in various settings, from technical projects to community initiatives.
+                Collaboration has always been one of my strongest skills. Over the years, I’ve learned how to work effectively with teams in various settings, from technical projects to community initiatives. 
             </p>
             <p>
-                When working in a team, I believe in open communication. I ensure everyone has a chance to share their thoughts and ideas, which often leads to creative and innovative solutions. For example, during a recent hackathon, my team and I developed a chatbot by combining everyone's expertise—some worked on the front-end, while others focused on the AI model. By clearly dividing tasks and staying connected throughout the project, we successfully delivered a product that exceeded expectations.
+                When working in a team, I believe in <span class="highlight">open communication</span>. I ensure everyone has a chance to share their thoughts and ideas, which often leads to creative and innovative solutions. For example, during a recent hackathon, my team and I developed a chatbot by combining everyone’s expertise—some worked on the front-end, while others focused on the AI model. By clearly dividing tasks and staying connected throughout the project, we successfully delivered a product that exceeded expectations.
             </p>
             <p>
-                I also value feedback and adaptability. In group settings, I actively seek input from my peers and take constructive criticism to improve the outcome. I’m a firm believer in celebrating successes together and learning from challenges as a team. These principles have helped me build strong, lasting connections with my teammates and achieve great results in every collaboration.
+                I also value <span class="highlight">feedback</span> and adaptability. In group settings, I actively seek input from my peers and take constructive criticism to improve the outcome. I’m a firm believer in celebrating successes together and learning from challenges as a team. These principles have helped me build strong, lasting connections with my teammates and achieve great results in every collaboration.
             </p>
         </div>
     </div>
