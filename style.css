@@ -398,7 +398,7 @@ section {
     transition: transform 0.2s ease;
 }
 .blog-img-1 {
-    object-position: center 15%; /* Adjust downward for 'What I Enjoy Doing' */
+    object-position: center 10%; /* Adjust downward for 'What I Enjoy Doing' */
 }
 
 .blog-img-2 {
@@ -406,7 +406,7 @@ section {
 }
 
 .blog-img-3 {
-    object-position: center 30%; /* Adjust slightly downward for 'How I Relate with People' */
+    object-position: center 25%; /* Adjust slightly downward for 'How I Relate with People' */
 }
 
 
