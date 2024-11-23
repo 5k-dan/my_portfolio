@@ -4,7 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How I Relate with People</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .back-home {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+            transform: scale(1.05);
+        }
+        .relate-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .relate-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
+            color: #333;
+        }
+        .relate-content {
+            margin: 2rem auto;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #555;
+            text-align: justify;
+            padding: 0 1rem;
+        }
+        .relate-content p {
+            margin-bottom: 1.5rem;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            color: rgb(0, 157, 255);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Back to Home Button -->
@@ -13,20 +92,25 @@
     </div>
 
     <!-- Blog Post Content -->
-    <div class="relate-with-people-container">
-        <h1 class="relate-with-people-title">How I Relate with People</h1>
-        <div class="relate-with-people-image">
-            <img src="relate2.jpg" alt="Connecting with People" class="resized-relate-img">
+    <div class="relate-container">
+        <h1 class="relate-title">How I Relate with People</h1>
+        <div class="image-grid">
+            <img src="relate1.jpg" alt="Networking Event">
+            <img src="relate2.jpg" alt="Collaboration Session">
+            <img src="relate3.jpg" alt="Community Building">
         </div>
-        <div class="relate-with-people-content">
+        <div class="relate-content">
             <p>
-                Building meaningful relationships with people has always been a cornerstone of my personal and professional life. I believe that listening and understanding others' perspectives is the key to forming genuine connections.
+                In my first year of college, I took an online introductory computer science course. While the course itself was interesting, I quickly noticed something was missing—a sense of community. For many students, especially minorities in computer science, the lack of connection made the experience isolating.
             </p>
             <p>
-                Whether it's collaborating on a project or simply having a casual conversation, I focus on being present and empathetic. In my role as a Social Media Director, for instance, I worked closely with team members to highlight their achievements and ensure everyone felt valued and recognized. This not only boosted morale but also strengthened our collective bond as an organization.
+                To address this, I helped start a club called <span class="highlight">Multicultural Innovators in Computer Science</span>. The goal of the club was simple: to create a space where students from diverse backgrounds could come together, share their experiences, and support one another in their computer science journeys. We wanted to bridge the gap that often exists in STEM fields and make sure everyone felt included and empowered.
             </p>
             <p>
-                I also enjoy meeting new people and learning about their journeys. Whether it’s through networking events or everyday encounters, I find joy in discovering common ground and exchanging ideas. These experiences have helped me grow as a person and build a diverse network of friends, colleagues, and mentors who inspire me every day.
+                One of our first activities was organizing study groups and networking sessions. These events allowed students to collaborate on projects, exchange ideas, and build friendships that extended beyond the classroom. Over time, the club became a hub for mentorship, career advice, and meaningful discussions about the challenges and opportunities in computer science. 
+            </p>
+            <p>
+                This experience taught me the value of taking initiative and building relationships. By creating a supportive community, we not only helped each other succeed academically but also showed that a shared sense of purpose can bring people closer and inspire positive change.
             </p>
         </div>
     </div>
