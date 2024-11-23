@@ -435,6 +435,80 @@ section {
     margin: 0 auto; /* Center the image */
     display: block;
 }
+/* Specific styling for the "How I Work with Teams" subpage */
+.work-with-teams-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Post Title Styling */
+.work-with-teams-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Image Styling */
+.work-with-teams-image {
+    margin-bottom: 2rem;
+}
+
+.resized-teams-img {
+    width: 60%; /* Adjust size as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image */
+    display: block;
+}
+
+/* Post Content Styling */
+.work-with-teams-content p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Specific styling for the "How I Relate with People" subpage */
+.relate-with-people-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Post Title Styling */
+.relate-with-people-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Image Styling */
+.relate-with-people-image {
+    margin-bottom: 2rem;
+}
+
+.resized-relate-img {
+    width: 60%; /* Adjust size as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image */
+    display: block;
+}
+
+/* Post Content Styling */
+.relate-with-people-content p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
 
 /* Post Content Styling */
 .post-content p {
