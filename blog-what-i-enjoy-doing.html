@@ -4,7 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What I Enjoy Doing</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .back-home {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .btn {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+            transform: scale(1.05);
+        }
+        .blog-post-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .post-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .post-content {
+            margin-top: 2rem;
+        }
+        .post-content p {
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        .side-by-side {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .side-by-side img {
+            width: 48%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .side-by-side img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        @media (max-width: 768px) {
+            .side-by-side {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .side-by-side img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="back-home">
@@ -12,8 +78,9 @@
     </div>
     <div class="blog-post-container">
         <h1 class="post-title">What I Enjoy Doing</h1>
-        <div class="post-image">
-            <img src="enjoy1.jpg" alt="What I Enjoy Doing" class="resized-img">
+        <div class="side-by-side">
+            <img src="clarinet.jpg" alt="Playing the Clarinet">
+            <img src="piano.jpg" alt="Playing the Piano">
         </div>
         <div class="post-content">
             <p>
@@ -22,8 +89,14 @@
             <p>
                 I also love to play piano. I played for my church throughout the three years of high school, and that was one of my most supreme experiences in life. The piano has always been my favorite instrument as a means of relaxation and expressing creativity. Whether I'm improvising or learning new songs, it's a hobby that soothes and brings me joy.
             </p>
+        </div>
+        <div class="side-by-side">
+            <img src="gaming.jpg" alt="Gaming with Friends">
+            <img src="cooking.jpg" alt="Cooking Delicious Meals">
+        </div>
+        <div class="post-content">
             <p>
-                When I am not playing music, I love to explore video games. My favorite games are Fortnite, Roblox, and Rocket League. Gaming to me is about working with friends, improvising, and having fun. Weekends were always  the best time for me to unwind and have fun from friendly competition.
+                When I am not playing music, I love to explore video games. My favorite games are Fortnite, Roblox, and Rocket League. Gaming to me is about working with friends, improvising, and having fun. Weekends were always the best time for me to unwind and have fun from friendly competition.
             </p>
             <p>
                 Cooking has been one of my favorite activities. I love cooking different types of food. My favorite thing to cook is still Jollof rice with meat. These recipes remind me of home and allow me to share my culture with other people.
