@@ -408,17 +408,33 @@ section {
 .blog-img-3 {
     object-position: center 24%; /* Adjust slightly downward for 'How I Relate with People' */
 }
-/* Styling for Blog Post Container */
+/* Specific styling for images in the "What I Enjoy Doing" subpage */
 .blog-post-container {
-    max-width: 800px;
-    margin: 3rem auto;
+    max-width: 700px;
+    margin: 2rem auto;
     padding: 1rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+/* Post Title Styling */
+.post-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
 
+/* Image Styling */
+.post-image {
+    margin-bottom: 2rem;
+}
+
+.resized-img {
+    width: 60%; /* Adjust size as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image */
+    display: block;
+}
 /* Specific styling for the "How I Work with Teams" subpage */
 .work-with-teams-container {
     max-width: 700px;
@@ -707,5 +723,4 @@ footer ul li a {
         gap: 1rem;
     }
 }
-
 
