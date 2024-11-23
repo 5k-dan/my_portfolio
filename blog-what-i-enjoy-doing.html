@@ -9,6 +9,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         .back-home {
             text-align: center;
@@ -21,6 +22,7 @@
             border-radius: 20px;
             text-decoration: none;
             font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .btn:hover {
             background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
@@ -30,49 +32,55 @@
             max-width: 900px;
             margin: 2rem auto;
             padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
         .post-title {
             font-size: 2.5rem;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin: 1rem 0;
+            color: #333;
         }
         .post-content {
-            margin-top: 2rem;
-        }
-        .post-content p {
+            margin: 2rem auto;
             line-height: 1.8;
             font-size: 1rem;
-            color: #333;
-            margin-bottom: 1.5rem;
+            color: #555;
             text-align: justify;
+            padding: 0 1rem;
         }
-        .side-by-side {
-            display: flex;
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
             justify-content: center;
+            margin: 1rem 0;
+            padding: 0 1rem;
         }
-        .side-by-side img {
-            width: 200px; /* Set fixed size for square images */
+        .image-grid img {
+            width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-        .side-by-side img:hover {
+        .image-grid img:hover {
             transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
+        }
+        .highlight {
+            color: rgb(0, 157, 255);
+            font-weight: bold;
         }
         @media (max-width: 768px) {
-            .side-by-side {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .side-by-side img {
-                width: 100%;
-                height: auto;
+            .image-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -83,28 +91,24 @@
     </div>
     <div class="blog-post-container">
         <h1 class="post-title">What I Enjoy Doing</h1>
-        <div class="side-by-side">
+        <div class="image-grid">
             <img src="clarinet.jpg" alt="Playing the Clarinet">
             <img src="piano.jpg" alt="Playing the Piano">
-        </div>
-        <div class="post-content">
-            <p>
-                Music has been a significant part of my life. I’ve been playing the clarinet for six years, starting in high school and continuing through college. I played at church services and weddings. Playing the clarinet allows me to express myself and bring joy to others. It’s more than just an instrument to me—it’s a way to connect with people and create beautiful moments.
-            </p>
-            <p>
-                I also love to play piano. I played for my church throughout the three years of high school, and that was one of my most supreme experiences in life. The piano has always been my favorite instrument as a means of relaxation and expressing creativity. Whether I'm improvising or learning new songs, it's a hobby that soothes and brings me joy.
-            </p>
-        </div>
-        <div class="side-by-side">
             <img src="gaming.jpg" alt="Gaming with Friends">
             <img src="cooking.jpg" alt="Cooking Delicious Meals">
         </div>
         <div class="post-content">
             <p>
-                When I am not playing music, I love to explore video games. My favorite games are Fortnite, Roblox, and Rocket League. Gaming to me is about working with friends, improvising, and having fun. Weekends were always the best time for me to unwind and have fun from friendly competition.
+                Music has been a significant part of my life. I’ve been playing the <span class="highlight">clarinet</span> for six years, starting in high school and continuing through college. I’ve played at church services and weddings. Playing the clarinet allows me to express myself and bring joy to others. It’s more than just an instrument to me—it’s a way to connect with people and create beautiful moments.
             </p>
             <p>
-                Cooking has been one of my favorite activities. I love cooking different types of food. My favorite thing to cook is still Jollof rice with meat. These recipes remind me of home and allow me to share my culture with other people.
+                I also love to play the <span class="highlight">piano</span>. I played for my church throughout the three years of high school, and it was one of my most cherished experiences. The piano has always been my favorite instrument for relaxation and expressing creativity. Whether I'm improvising or learning new songs, it's a hobby that soothes and brings me joy.
+            </p>
+            <p>
+                When I’m not playing music, I love diving into <span class="highlight">video games</span>. My favorite games are Fortnite, Roblox, and Rocket League. Gaming, to me, is about working with friends, strategizing, and having fun. Weekends are always the best time for me to unwind and enjoy friendly competition in these exciting virtual worlds.
+            </p>
+            <p>
+                <span class="highlight">Cooking</span> has also been one of my favorite activities. I love preparing different types of food, especially traditional Nigerian dishes like Jollof rice and fufu. These recipes remind me of home and allow me to share my culture with others. I also enjoy cooking American meals, such as salmon with rice and fried potatoes. Cooking is not just a skill—it’s a creative outlet that brings joy to myself and those around me.
             </p>
         </div>
     </div>
