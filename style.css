@@ -416,27 +416,6 @@ section {
     object-fit: cover;
     border-radius: 8px;
 }
-/* Styling for images in the blog subpages */
-.blog-subpage img {
-    width: 60%; /* Adjust to control the width */
-    max-width: 800px; /* Prevent the image from being too large */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 2rem auto; /* Center the image and add spacing */
-    border-radius: 15px; /* Slight rounding for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-}
-
-/* Paragraph and text styling for blog subpages */
-.blog-subpage p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    margin: 1rem auto;
-    width: 80%; /* Keep text aligned with the image */
-    max-width: 900px;
-    text-align: justify; /* Improve readability */
-}
 
 .blog-card h3 {
     font-size: 1.5rem;
