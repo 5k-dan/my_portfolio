@@ -405,6 +405,13 @@ section {
     object-position: center top; /* Adjust the position to show the top part of the image */
     border-radius: 8px;
 }
+.blog-img-1 {
+    object-position: center 20%; /* Adjust as needed to show your face */
+}
+
+.blog-img-3 {
+    object-position: center 30%; /* Adjust for the specific image */
+}
 
 
 .blog-card h3 {
