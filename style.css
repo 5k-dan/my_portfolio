@@ -409,6 +409,59 @@ section {
     object-position: center 24%; /* Adjust slightly downward for 'How I Relate with People' */
 }
 /* Specific styling for images in the "What I Enjoy Doing" subpage */
+/* Styling for Blog Post Container */
+.blog-post-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Post Title Styling */
+.post-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Image Styling */
+.post-image {
+    margin-bottom: 2rem;
+}
+
+.resized-img {
+    width: 60%; /* Adjust size as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Content Styling */
+.post-content p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Back to Home Button */
+.back-home {
+    margin: 1rem;
+}
+
+.back-home .btn {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-home .btn:hover {
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    transform: scale(1.05);
+}
 
 .blog-card img {
     width: 100%;
