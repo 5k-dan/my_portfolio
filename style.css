@@ -397,6 +397,18 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
 }
+.blog-img-1 {
+    object-position: center 30%; /* Adjust downward for 'What I Enjoy Doing' */
+}
+
+.blog-img-2 {
+    object-position: center; /* Reset to default for 'How I Work with Teams' */
+}
+
+.blog-img-3 {
+    object-position: center 40%; /* Adjust slightly downward for 'How I Relate with People' */
+}
+
 
 .blog-card img {
     width: 100%;
