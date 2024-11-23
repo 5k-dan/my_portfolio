@@ -406,11 +406,11 @@ section {
     border-radius: 8px;
 }
 .blog-img-1 {
-    object-position: center 20%; /* Adjust as needed to show your face */
+    object-position: center 50%; /* Adjust as needed to show your face */
 }
 
 .blog-img-3 {
-    object-position: center 30%; /* Adjust for the specific image */
+    object-position: center 50%; /* Adjust for the specific image */
 }
 
 
