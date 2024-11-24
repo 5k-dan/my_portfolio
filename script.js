@@ -1,12 +1,28 @@
-const menuIcon = document.querySelector('#menu-icon');
-const navLinks = document.querySelector('.nav-links');
+<script>
+    const carouselItems = document.querySelector('.carousel-items');
+    const leftButton = document.querySelector('.carousel-button.left');
+    const rightButton = document.querySelector('.carousel-button.right');
+    let currentIndex = 0;
 
-// Toggle navigation menu on menu icon click
-menuIcon.onclick = () => {
-    navLinks.classList.toggle('active');
-};
+    // Handle right arrow click
+    rightButton.addEventListener('click', () => {
+        const totalItems = document.querySelectorAll('.carousel-item').length;
+        if (currentIndex < totalItems - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to the first item
+        }
+        carouselItems.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
 
-// Open GitHub profile when "Visit GitHub" button is clicked
-document.getElementById("visit-github").onclick = () => {
-    window.open("https://github.com/5k-dan", "_blank");
-};
+    // Handle left arrow click
+    leftButton.addEventListener('click', () => {
+        const totalItems = document.querySelectorAll('.carousel-item').length;
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalItems - 1; // Loop back to the last item
+        }
+        carouselItems.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+</script>
